@@ -1,0 +1,9 @@
+1. Product::count();
+2. Product::active()->count();
+3. Product::with('category')->latest()->take(10)->get();
+4. Product::where('price','>',200000)->orderBy('price','desc')->get();
+5. Order::with(['user','items.product'])->latest()->take(5)->get();
+
+Eager loading:
+Product::with('category')->get();
+Order::with(['user','items.product'])->get();

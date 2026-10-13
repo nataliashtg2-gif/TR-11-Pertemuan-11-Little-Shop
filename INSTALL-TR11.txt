@@ -1,0 +1,12 @@
+Setelah menyalin source ke project Laravel:
+1) composer require laravel/breeze --dev
+2) php artisan breeze:install blade
+3) npm install && npm run build
+4) Atur .env MySQL
+5) Daftarkan alias middleware `role` ke App\Http\Middleware\RoleMiddleware sesuai versi Laravel (Laravel 11/12 biasanya di bootstrap/app.php).
+6) php artisan migrate:fresh --seed
+7) php artisan serve
+
+Filament bonus dipasang setelah fitur wajib lolos:
+composer require filament/filament
+php artisan filament:install --panels

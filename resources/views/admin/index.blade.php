@@ -1,0 +1,1 @@
+@extends('layouts.app') @section('title','Admin') @section('content')<section class="hero"><div><span class="tag">ADMIN SPACE</span><h1>Little Shop Control Center</h1><p>Area admin untuk pengujian role dan policy.</p></div><div class="art">🧡🔐</div></section>@endsection
